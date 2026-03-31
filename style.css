@@ -1,0 +1,499 @@
+/* Table of contents
+1. Desktop/main
+2. MEW
+3. Tablet
+*/
+
+/* 1. Desktop/main */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 0.15rem solid rgb(228, 224, 224);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header h1 {
+  margin-left: 3rem;
+  color: rgba(46, 43, 255, 0.925);
+}
+
+nav {
+  justify-content: flex-end;
+  justify-content: space-between;
+  color: gray;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul a {
+  margin: 0.75rem;
+  color: rgb(90, 88, 88);
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+#innovate {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 1rem;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  justify-content: space-between;
+  font-size: 1.75rem;
+}
+
+.innovate-left {
+  width: 40%;
+  padding-left: 2%;
+}
+
+.innovate-left h1 {
+  font-weight: 600;
+}
+
+.innovate-left p {
+  font-weight: normal;
+  color: rgb(128, 128, 128);
+}
+
+.imgOne {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 5%;
+}
+
+.imgOne img {
+  width: 60%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  border-radius: 5%;
+}
+
+button {
+  border-radius: 10%;
+  height: 10%;
+  width: 20%;
+}
+
+.get {
+  background-color: blue;
+  border: 0.15rem solid white;
+}
+
+.get a {
+  color: white;
+}
+
+.learn {
+  border: 0.15rem solid blue;
+  background-color: white;
+}
+
+.creTitle {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: rgb(240, 240, 240);
+  margin: 0;
+  padding-top: 2.5%;
+}
+
+#core {
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 5%;
+}
+
+.smart {
+  background-color: white;
+  width: 30%;
+  border-radius: 5%;
+  border: 1rem solid white;
+}
+
+.lightning {
+  background-color: white;
+  width: 30%;
+  border-radius: 5%;
+  border: 1rem solid white;
+}
+.secure {
+  background-color: white;
+  width: 30%;
+  border-radius: 5%;
+  border: 1rem solid white;
+}
+
+.smart .lightning .secure p {
+  text-align: center;
+}
+
+.smart img {
+  width: 17%;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.lightning img {
+  width: 25%;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.secure img {
+  width: 25%;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+#aboutTech {
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.abtvrbge {
+  width: 50%;
+  margin: 2%;
+  text-align: center;
+}
+
+.abtvrbge p {
+  text-align: left;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.projects h3 {
+  color: blue;
+}
+.percent h3 {
+  color: blue;
+}
+.time h3 {
+  color: blue;
+}
+
+.imgTwo {
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.imgTwo img {
+  width: 50%;
+  border-radius: 5%;
+}
+
+footer {
+  background-color: rgb(15, 15, 65);
+  display: flex;
+  justify-content: space-around;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 2%;
+}
+
+.brand {
+  margin-right: 5%;
+}
+
+.brand h4 {
+  color: blue;
+}
+
+.brand p {
+  color: white;
+}
+
+.qlinks {
+  margin-right: 15%;
+}
+
+.qlinks h4 {
+  color: white;
+}
+
+.qlinks a {
+  color: rgb(189, 188, 188);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact {
+  color: white;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.cpyrt {
+  text-align: center;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(172, 168, 168);
+  background-color: rgb(15, 15, 65);
+  border-top: 0.2rem solid rgb(70, 70, 71);
+  margin: 0;
+}
+
+.cpyrt p {
+  margin: 0;
+  padding: 1.5%;
+}
+
+/* 2. MEW */
+
+@media screen and (max-width: 766px) {
+  header {
+    display: block;
+  }
+
+  header h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  nav ul {
+    text-align: center;
+    margin: 2.5%;
+    padding: 0%;
+  }
+
+  #innovate {
+    display: block;
+  }
+
+  .innovate-left {
+    width: fit-content;
+    align-items: center;
+    padding: 0;
+    font-size: 0.95rem;
+  }
+
+  .innovate-left p {
+    width: 75%;
+  }
+
+  .press {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  button {
+    height: 3rem;
+    width: 45%;
+    margin: 2%;
+  }
+
+  button a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .imgOne {
+    width: auto;
+    margin: 5%;
+  }
+
+  .imgOne img {
+    width: 90%;
+  }
+
+  #core {
+    display: block;
+  }
+
+  .smart {
+    width: 95%;
+    margin: 2%;
+  }
+  .lightning {
+    width: 95%;
+    margin: 2%;
+  }
+  .secure {
+    width: 95%;
+    margin: 2%;
+  }
+
+  #aboutTech {
+    display: block;
+  }
+
+  .abtvrbge {
+    width: fit-content;
+  }
+
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: space-between;
+  }
+
+  .imgTwo {
+    text-align: left;
+  }
+
+  .imgTwo img {
+    width: 95%;
+    margin: 2% 2% 10% 2%;
+  }
+
+  footer {
+    display: block;
+
+    font-size: 0.75rem;
+  }
+
+  .qlinks {
+    margin-bottom: 10%;
+  }
+
+  .cpyrt p {
+    font-size: 0.5rem;
+    margin-top: 3%;
+  }
+}
+
+/* 3. Tablet */
+
+@media screen and (767px <= width <= 1024px) {
+  header {
+    display: block;
+  }
+
+  header h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  nav ul {
+    text-align: center;
+    margin: 2.5%;
+    padding: 0%;
+  }
+
+  #innovate {
+    display: block;
+  }
+
+  .innovate-left {
+    width: fit-content;
+    align-items: center;
+    padding: 0;
+    font-size: 0.95rem;
+  }
+
+  .innovate-left p {
+    width: 75%;
+  }
+
+  .press {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  button {
+    height: 3rem;
+  }
+
+  button a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .imgOne {
+    margin: 10%;
+  }
+
+  #core {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .smart {
+    width: 45%;
+    margin: 2%;
+  }
+  .lightning {
+    width: 45%;
+    margin: 2%;
+  }
+  .secure {
+    width: 45%;
+    margin: 2%;
+  }
+
+  #aboutTech {
+    display: block;
+  }
+
+  .abtvrbge {
+    width: fit-content;
+  }
+
+  .imgTwo {
+    text-align: left;
+    margin: 2% 0 5% 0;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    font-size: 0.75rem;
+  }
+
+  .qlinks {
+    width: 30%;
+  }
+
+  .cpyrt p {
+    font-size: 0.5rem;
+    margin-top: 3%;
+  }
+}
